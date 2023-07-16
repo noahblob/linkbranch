@@ -6,9 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Linkbranch</title>
   <link rel="stylesheet" href="./index.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color2: 0xffc200,
+        separation: 100.00,
+        alignment: 68.00,
+        cohesion: 4.00,
+        quantity: 2.00,
+        backgroundAlpha: 0.0
+      })
+    })
+  </script>
 </head>
 
 <body>
+  <div id="vanta"></div>
   <main>
     <header>
       <img src="./images/selfie.jpg" alt="Selfie" />
@@ -17,25 +40,25 @@
     <ul>
       <li>
         <a href="https://noahblob.github.io/">
-          <img src="./images/homepage.svg" alt="Homepage" width="20"/>
+          <img src="./images/homepage.svg" alt="Homepage" width="20" />
           Official Website
         </a>
       </li>
       <li>
         <a href="https://twitter.com/noahblob1">
-          <img src="./images/twitter.svg" alt="Twitter" width="20"/>
+          <img src="./images/twitter.svg" alt="Twitter" width="20" />
           Twitter
         </a>
       </li>
       <li>
         <a href="https://www.youtube.com/channel/UCejKY0ho5pdZsIKOOP950Xg">
-          <img src="./images/youtube.svg" alt="YouTube" width="20"/>
+          <img src="./images/youtube.svg" alt="YouTube" width="20" />
           YouTube
         </a>
       </li>
       <li>
         <a href="https://github.com/noahblob">
-          <img src="./images/github.svg" alt="GitHub" width="20"/>
+          <img src="./images/github.svg" alt="GitHub" width="20" />
           GitHub
         </a>
       </li>
