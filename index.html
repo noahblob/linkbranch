@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Linkbranch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noah Hagar-Dent - Linkbranch</title>
   <link rel="stylesheet" href="./index.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
@@ -14,7 +14,7 @@
         el: "#vanta",
         mouseControls: true,
         touchControls: true,
-        gyroControls: false,
+        gyroControls: true,
         minHeight: 200.00,
         minWidth: 200.00,
         scale: 1.00,
@@ -26,6 +26,12 @@
         quantity: 2.00,
         backgroundAlpha: 0.0
       })
+
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
     })
   </script>
 </head>
